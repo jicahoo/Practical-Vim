@@ -1,2 +1,2 @@
 # Practical-Vim
-# From https://pragprog.com/titles/dnvim/source_code
+* Inspired by the book <Pratical VIM>
