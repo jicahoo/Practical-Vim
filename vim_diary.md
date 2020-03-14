@@ -12,4 +12,4 @@
 
 5. In C++, change the . operation to -> operation.
 * Find '.', type 's' command to delete '.' and switch into insert mode, type '->', then find next '.', type '.' command to repeat. Cool!
-* 'f.s-><Esc>;s-><Esx>`
+* key sequence: `f.s-><Esc>;s-><Esx>`
