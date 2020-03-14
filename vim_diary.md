@@ -36,3 +36,18 @@
        line 2
     }
     ```
+
+9. Add line continuation for C++ macro, namely, use VIM to add char in one column.
+* In Notepad++, it's easy to implement it using Alt+Mouse. In VIM, it's not.
+* For now, I wrote a VIM script to implement this requirement.
+
+```text
+for i in range(4, 10)
+  call cursor(i, 1)
+  execute "normal" (20-strlen(getline("."))) . "A "
+  execute "normal" "A\\"
+endfor
+```
+* How to run this script? Input the script into vim. Yank these script lines. And call it via `:@"`.
+* After run, the script will input '\' from line 4 to line 10 at column 20.
+
