@@ -49,5 +49,5 @@ for i in range(4, 10)
 endfor
 ```
 * How to run this script? Input the script into vim. Yank these script lines. And call it via `:@"`.
-* After run, the script will input '\' from line 4 to line 10 at column 20.
+* After run, the script will input `\` from line 4 to line 10 at column 20.
 
