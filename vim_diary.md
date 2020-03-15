@@ -15,10 +15,22 @@
 * key sequence: `f.s-><Esc>;s-><Esx>`
 
 6. In vim, show the hex value of decimal string.
-* Yank the number string.  168
+* Yank the number string.  168 
 * `:echo printf("%x",@")`
 * key sequenc: `vey:echo printf("%x",@")`
 * v: visual mode, e:move to word end, y: copy the num str.
+* More efficient way: `yiw` to copy current number under cursor.
+* Code:
+  ```text
+  function! Mhex()
+    execute "normal yiw"
+    echo printf("%x", getreg('"'))
+  endfunction
+  ```
+* key mapping: `:nmap <C-I> <Esc>:call Mhex()<CR>`
+* After that, Ctrl+i key will display the hex format of number under cursor.
+
+
 
 7. In vim, format text segement as xml.
 * Sampe: `<hello> <world> Haha! </world> </hello>`
