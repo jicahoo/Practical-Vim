@@ -63,3 +63,11 @@ endfor
 * How to run this script? Input the script into vim. Yank these script lines. And call it via `:@"`.
 * After run, the script will input `\` from line 4 to line 10 at column 20.
 
+10. Show all matched lines in separate window:
+* https://vi.stackexchange.com/questions/2280/show-only-matching-lines
+* :vimgrep pattern %
+* :cwin
+
+11. spell check and fix typo
+* :set spell
+* z= to fix typo.
