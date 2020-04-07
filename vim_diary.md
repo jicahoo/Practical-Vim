@@ -29,6 +29,8 @@
   ```
 * key mapping: `:nmap <C-I> <Esc>:call Mhex()<CR>`
 * After that, Ctrl+i key will display the hex format of number under cursor.
+* One possible way is to call Linux command: printf "%x" 123
+* One possible way is to call :echo printf("%x", 123) directly.
 
 
 
